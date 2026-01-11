@@ -7,6 +7,9 @@ from sklearn.metrics import accuracy_score,confusion_matrix
 import matplotlib.pyplot  as plt
 import seaborn as sns
 
+mlflow.set_tracking_uri("http://127.0.0.1:5000")
+
+
 #Loading wine dataset
 wine = load_wine()
 x = wine.data
